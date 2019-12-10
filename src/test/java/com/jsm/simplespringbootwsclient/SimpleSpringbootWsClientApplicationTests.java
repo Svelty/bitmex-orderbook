@@ -1,4 +1,4 @@
-package com.example.simplespringbootwsclient;
+package com.jsm.simplespringbootwsclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
