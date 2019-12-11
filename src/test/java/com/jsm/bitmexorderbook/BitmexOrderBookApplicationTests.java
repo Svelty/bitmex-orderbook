@@ -1,10 +1,10 @@
-package com.jsm.simplespringbootwsclient;
+package com.jsm.bitmexorderbook;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SimpleSpringbootWsClientApplicationTests {
+class BitmexOrderBookApplicationTests {
 
 	@Test
 	void contextLoads() {
