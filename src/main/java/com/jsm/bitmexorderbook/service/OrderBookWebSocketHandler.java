@@ -13,8 +13,7 @@ public class OrderBookWebSocketHandler extends TextWebSocketHandler {
 
     @Override
     public void handleTextMessage(WebSocketSession session, TextMessage message) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.readValue();
+        
 
         LOGGER.info("received message - " + message.getPayload());
     }
