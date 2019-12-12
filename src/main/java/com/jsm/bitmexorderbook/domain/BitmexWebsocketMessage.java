@@ -24,12 +24,4 @@ public class BitmexWebsocketMessage {
     String info;
     String version;
     String timestamp;
-
-//    public class Data {
-//        String symbol;
-//        Long id;
-//        String side;
-//        Long size;
-//        Float price;
-//    }
 }

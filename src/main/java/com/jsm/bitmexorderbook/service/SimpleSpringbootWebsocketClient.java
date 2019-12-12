@@ -1,5 +1,6 @@
 package com.jsm.bitmexorderbook.service;
 
+import com.jsm.bitmexorderbook.domain.OrderBook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class SimpleSpringbootWebsocketClient {
         try {
             WebSocketClient webSocketClient = new StandardWebSocketClient();
 
-            WebSocketSession webSocketSession = webSocketClient.doHandshake(new OrderBookWebSocketHandler(),
+            WebSocketSession webSocketSession = webSocketClient.doHandshake(new OrderBookWebSocketHandler(new BitmexOrderBookService(new OrderBook())),
                     new WebSocketHttpHeaders(),
                     URI.create("wss://www.bitmex.com/realtime?subscribe=orderBookL2_25:XBTUSD")
             ).get();
