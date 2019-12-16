@@ -12,7 +12,7 @@ import java.util.ArrayList;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BitmexWebsocketMessage {
+public class BitmexWebsocketMessage extends Object{
     String table;
     String action;
     ArrayList<String> keys;

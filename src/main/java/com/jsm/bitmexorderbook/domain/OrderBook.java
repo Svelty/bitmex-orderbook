@@ -15,7 +15,7 @@ import java.util.ArrayList;
 @ToString
 public class OrderBook {
 
-    
+
     private String exchange;
     private ArrayList<OrderBookLevel> bids;
     private ArrayList<OrderBookLevel> asks;

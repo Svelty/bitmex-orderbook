@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-//if creating an orderbook specific to an exchange that orderbook should be a singleton
 @Service
 @AllArgsConstructor
 public class BitmexOrderBookService {
@@ -20,7 +19,7 @@ public class BitmexOrderBookService {
 
     OrderBook bitmexOrderBook;
 
-    void createOrderBookFromPartial(BitmexWebsocketMessage msg) {
+    void initializeOrderBook(BitmexWebsocketMessage msg) {
         this.bitmexOrderBook.setExchange("Bitmex");
         this.bitmexOrderBook.setAsks(new ArrayList<>());
         this.bitmexOrderBook.setBids(new ArrayList<>());
@@ -42,5 +41,9 @@ public class BitmexOrderBookService {
             }
         });
         LOGGER.info("BITMEX ORDERBOOK CREATED!:" + bitmexOrderBook.toString());
+    }
+
+    void updateOrderBook(BitmexWebsocketMessage msg) {
+
     }
 }
