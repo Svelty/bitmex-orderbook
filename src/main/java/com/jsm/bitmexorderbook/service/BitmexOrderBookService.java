@@ -44,6 +44,19 @@ public class BitmexOrderBookService {
     }
 
     void updateOrderBook(BitmexWebsocketMessage msg) {
+        LOGGER.info("BITMEX ORDERBOOK UPDATE!: " + msg);
+        msg.getData().forEach((dataEl) -> {
+//            if (dataEl) {
+//
+//            }
+        });
+    }
+
+    void deleteOrderBookLevel(BitmexWebsocketMessage msg) {
+
+    }
+
+    void insertOrderBookLevel(BitmexWebsocketMessage msg) {
 
     }
 }

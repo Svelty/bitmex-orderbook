@@ -29,6 +29,12 @@ public class BitmexWebSocketHandler extends TextWebSocketHandler {
             if (wsMsg.getTable() != null && wsMsg.getTable().equals("orderBookL2_25")) {
                 if (wsMsg.getAction().equals("partial")) {
                     bitmexOrderBookService.initializeOrderBook(wsMsg);
+                } else if (wsMsg.getAction().equals("update")) {
+                    bitmexOrderBookService.updateOrderBook(wsMsg);
+                } else if (wsMsg.getAction().equals("delete")) {
+                    LOGGER.info("BITMEX MESSAGE: "+ wsMsg);
+                } else if (wsMsg.getAction().equals("insert")) {
+                    LOGGER.info("BITMEX MESSAGE: "+ wsMsg);
                 }
             }
 

@@ -23,20 +23,7 @@ public class CoinbaseWebSocketHandler extends TextWebSocketHandler {
     @Override
     public void handleTextMessage(WebSocketSession session, TextMessage message) {
 
-
-//        try {
-//            BitmexWebsocketMessage wsMsg = objectMapper.readValue(message.getPayload(), BitmexWebsocketMessage.class);
-//
-//            if (wsMsg.getTable() != null && wsMsg.getTable().equals("orderBookL2_25")) {
-//                if (wsMsg.getAction().equals("partial")) {
-//                    bitmexOrderBookService.initializeOrderBook(wsMsg);
-//                }
-//            }
-
-//        } catch (JsonProcessingException e) {
-//            LOGGER.info("Exception unmarshalling JSON: ", e);
-//        }
-        LOGGER.info("Coinbase Message: "+ message.getPayload());
+//        LOGGER.info("Coinbase Message: "+ message.getPayload());
     }
 
     @Override
