@@ -23,7 +23,7 @@ public class CoinbaseWebSocketHandler extends TextWebSocketHandler {
     @Override
     public void handleTextMessage(WebSocketSession session, TextMessage message) {
 
-//        LOGGER.info("Coinbase Message: "+ message.getPayload());
+        LOGGER.info("Coinbase Message: "+ message.getPayload());
     }
 
     @Override

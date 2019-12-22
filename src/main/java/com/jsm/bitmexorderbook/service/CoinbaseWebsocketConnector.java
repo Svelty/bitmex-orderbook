@@ -21,7 +21,7 @@ public class CoinbaseWebsocketConnector {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CoinbaseWebsocketConnector.class);
 
-    @PostConstruct
+//    @PostConstruct
     public void doStuff() {
 
         try {//new CoinbaseOrderBookService(new OrderBook()

@@ -53,10 +53,10 @@ public class BitmexOrderBookService {
     }
 
     void deleteOrderBookLevel(BitmexWebsocketMessage msg) {
-
+        LOGGER.info("BITMEX ORDERBOOK DELETE!: " + msg);
     }
 
     void insertOrderBookLevel(BitmexWebsocketMessage msg) {
-
+        LOGGER.info("BITMEX ORDERBOOK INSERT!: " + msg);
     }
 }
